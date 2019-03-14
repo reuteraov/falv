@@ -1708,7 +1708,9 @@ class zcl_falv implementation.
         t_selected_rows             = lt_lvc_row
         t_selected_columns          = lt_sel_cols
         t_selected_cells            = lt_sel_cells
-        r_data                      = grid->mt_outtab
+        r_data                      = cond #( when me->grid->mt_outtab is bound
+                                              then me->grid->mt_outtab
+                                              else me->outtab )
         s_layout                    = grid->m_cl_variant->ms_layout
         t_fieldcatalog              = grid->m_cl_variant->mt_fieldcatalog
         t_sort                      = grid->m_cl_variant->mt_sort
