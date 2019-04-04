@@ -61,7 +61,7 @@ class zcl_falv definition
                end of color ##NEEDED.
     constants version type string value '740.1.0.19' ##NO_TEXT.
     constants cc_name type char30 value 'CC_GRID' ##NO_TEXT.
-    constants c_screen_popup type sy-dynnr value '0200' ##NO_TEXT.
+    constants c_screen_popup type sy-dynnr value '0666' ##NO_TEXT.
     constants c_screen_full type sy-dynnr value '0100' ##NO_TEXT.
     constants c_fscr_repid type sy-repid value 'SAPLZFALV' ##NO_TEXT.
     data result type i read-only .
